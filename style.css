@@ -1,0 +1,246 @@
+/* gradient thingy */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(to left, red,rgb(255, 17, 0),rgb(255, 35, 0), rgb(255, 68, 0), rgb(255, 103, 0), rgb(255, 120, 0), rgb(255, 144, 0)
+    );
+    background-size: 400%;
+    animation: gradientmove 4s ease infinite;
+    color: white;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+@keyframes gradientmove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* header stuff */
+h1, h2 {
+    text-align: center;
+    margin: 25px 0 15px;
+    color: #ffffff;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+p {
+    text-align: center;
+}
+
+/* box title */
+.box {
+    background: rgba(255,255,255,0.15);
+    padding: 40px;
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* nav bar for changing pages */
+nav {
+    background: rgba(255,255,255,0.15);
+    padding: 12px;
+    border-radius: 12px;
+    margin: 10px auto 25px;
+    width: 90%;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+nav a.active {
+    background: rgba(255,255,255,0.35);
+}
+
+/* best table */
+
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.12);
+    border-radius: 14px;
+    overflow: hidden;
+    color: white;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+th {
+    background: rgba(255,255,255,0.25);
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+td {
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* cool hover yess */
+
+table img {
+    border-radius: 10%;
+    transition: 0.3s ease;
+}
+
+table img:hover {
+    transform: scale(1.15);
+}
+
+/* list polish */
+ul, ol {
+    width: 85%;
+    margin: 10px auto 25px;
+    padding-left: 35px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+/* marquee */
+marquee {
+    background: rgba(255,255,255,0.25);
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+.marquee-box {
+    width: 100%;
+    text-align: center;
+}
+
+.marquee-box marquee {
+    display: inline-block;
+}
+
+
+/* vid */
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 14px;
+    box-shadow: 0 4px 22px rgba(0,0,0,0.35);
+}
+
+/* buttons */
+a.btn {
+    padding: 12px 22px;
+    display: inline-block;
+    background: rgba(255,255,255,0.22);
+    color: white;
+    border-radius: 6.7px;
+    font-size: 16px;
+    font-weight: 670;
+    cursor: pointer;
+    transition: 0.3s;
+    backdrop-filter: blur(3px);
+    text-decoration: none;
+}
+a.btn:hover {
+    background: rgba(255,255,255,0.45);
+    transform: scale(1.03);
+}
+
+/* center button */
+.center {
+    text-align: center;
+}
+
+.center button {
+    margin: 0 auto;
+}
+
+/* button */
+button, a button {
+    padding: 12px 22px;
+    border: none;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    border-radius: 6.7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    backdrop-filter: blur(3px);
+}
+    /* button */
+button, a button {
+    padding: 12px 22px;
+    border: none;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    border-radius: 6.7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    backdrop-filter: blur(3px);
+}
+
+/* button */
+button, a button {
+    padding: 12px 22px;
+    border: none;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    border-radius: 6.7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    backdrop-filter: blur(3px);
+}
+
+
+
+
+button:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+/* footer for extra pts maybe */
+footer {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
